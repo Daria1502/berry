@@ -1,0 +1,226 @@
+@media screen and (min-width: 320px) {
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .field__item {
+    border: 1px solid $green;
+    border-radius: 20px;
+    padding-inline: 12px;
+    padding-block: 16px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  .field__item--address {
+    padding-block-end: 51px;
+  }
+
+  .field__item--message {
+    height: 124px;
+  }
+
+  .field__item:hover {
+    border-color: $green-hover;
+  }
+
+  .field__item:focus {
+    outline: none;
+  }
+
+  .field__item:focus-visible {
+    border-color: $green-hover;
+  }
+
+  .field__item::placeholder {
+    color: rgba($black, 0.3);
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  .field__item--required:invalid {
+    border-color: $error;
+  }
+
+  .field__item-select {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    margin: -1;
+    width: 1;
+    height: 1;
+  }
+
+  .field__item-select:active .field__thing-item {
+    border-color: rgba($color: $black, $alpha: 0.3);
+  }
+
+  .field__item-select:checked + .field__name > .field__thing-item::before {
+    opacity: 1;
+  }
+
+  .field__item-select:disabled + .field__name > .field__thing-item {
+    border-color: $leaf-grey;
+    margin-inline-start: 2px;
+  }
+
+  .field__item-select:focus-visible + .field__name {
+    outline: 2px solid rgba(#62d1ba, 0.7);
+    outline-offset: -2px;
+  }
+
+  .field__name {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+
+  .field__name--short {
+    width: 220px;
+  }
+
+  .field__name--middle {
+    width: 240px;
+  }
+
+  .field__name--small {
+    @include mobile-only {
+      font-size: 14px;
+      line-height: calc(16 / 14);
+    }
+  }
+
+  .field__name:hover .field__thing-item,
+  .field__name:hover .field__thing-item--checkbox::before {
+    border-color: $green-hover;
+  }
+
+  .field__name:hover .field__thing-item--radio::before {
+    background-color: $green-hover;
+  }
+
+  .field__name--text {
+    margin-inline-start: 12px;
+    margin-block-end: 4px;
+  }
+
+  .field__name--message {
+    margin-inline-start: 22px;
+    margin-block-end: 8px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
+
+  .field__name--required::after {
+    content: "*";
+    margin-inline-start: 2px;
+    color: $error;
+  }
+
+  .field__thing-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border: 2px solid $green;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    margin-inline-end: 12px;
+  }
+
+  .field__thing-item::before {
+    position: relative;
+    content: "";
+    opacity: 0;
+  }
+
+  .field__thing-item:hover::before {
+    transform: rotate(-45deg) scale(105%);
+  }
+
+  .field__thing-item--radio {
+    width: 21px;
+    height: 21px;
+    margin-inline-end: 14px;
+    border-radius: 50%;
+  }
+
+  .field__thing-item--radio::before {
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    background-color: $green;
+  }
+
+  .field__thing-item--checkbox::before {
+    border: 2px solid $green;
+    border-block-start: none;
+    border-inline-end: none;
+    top: -10%;
+    transform: rotate(-45deg);
+    width: 13px;
+    height: 7px;
+  }
+
+  .field__thing-item--indent {
+    margin-inline-end: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .field__item--address {
+    padding-block-end: 16px;
+  }
+
+  .field__item--message {
+    height: 144px;
+  }
+
+  .field__item:hover {
+    border-color: $green-hover;
+  }
+
+  .field__name {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+
+  .field__name--middle {
+    width: 249px;
+  }
+
+  .field__name--text {
+    margin-block-end: 2px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  .field__name--message {
+    margin-inline-start: 12px;
+    margin-block-end: 4px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  .field__thing-item--indent {
+    margin-inline-end: 22px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .field__name--short {
+    width: 255px;
+  }
+
+  .field__name--middle {
+    width: 353px;
+  }
+
+  .field__thing-item--indent {
+    margin-inline-end: 12px;
+  }
+}

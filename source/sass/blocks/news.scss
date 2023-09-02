@@ -1,0 +1,97 @@
+@media screen and (min-width: 320px) {
+  .news {
+    position: relative;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(70px, auto) 1fr auto;
+    align-items: center;
+    gap: 19px;
+    border: 2px solid $green;
+    border-radius: 40px;
+    padding-inline: 17px;
+    padding-block: 30px 71px;
+  }
+
+  .news::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 23px;
+    content: "";
+    background-image: url("../img/icons/branch.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 32px;
+  }
+
+  .news__title {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+  }
+
+  .news__text {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    align-self: start;
+  }
+
+  .news__date {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .news {
+    grid-template-rows: minmax(100px, auto) 1fr auto;
+    gap: 25px;
+    padding-inline: 31px;
+    min-height: 494px;
+    padding-block: 30px 103px;
+  }
+
+  .news::after {
+    transform: translateX(-50%);
+    bottom: 42px;
+    height: 40px;
+  }
+
+  .news__title {
+    font-size: 28px;
+    line-height: calc(33 / 28);
+  }
+
+  .news__text {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+
+  .news__text-break {
+    display: none;
+  }
+
+  .news__date {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .news {
+    padding-inline: 33px;
+    gap: 22px;
+  }
+
+  .news__title-break {
+    display: none;
+  }
+
+  .news__date {
+    margin-block-end: 4px;
+  }
+}

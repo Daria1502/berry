@@ -1,0 +1,84 @@
+@media screen and (min-width: 320px) {
+  .form {
+    position: relative;
+    padding-block: 51px 121px;
+  }
+
+  .form__field {
+    margin-block-end: 32px;
+  }
+
+  .form__field--berry {
+    margin-block-end: 32px;
+  }
+
+  .form__field--contacts {
+    margin-block-end: 32px;
+  }
+
+  .form__submit {
+    width: calc(100% - 4px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    padding-block: 76px 143px;
+  }
+
+  .form__field {
+    margin-block-end: 49px;
+  }
+
+  .form__field--berry {
+    margin-block-end: 50px;
+  }
+
+  .form__field--receipt {
+    margin-block-end: 43px;
+  }
+
+  .form__field--storage {
+    margin-block-end: 49px;
+  }
+
+  .form__field--contacts {
+    margin-block-end: 39px;
+  }
+
+  .form__submit {
+    width: 336px;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form {
+    padding-block: 60px 143px;
+    padding-inline: 24px 30px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    max-width: 100%;
+  }
+
+  .form__field {
+    grid-column: 3 / -2;
+  }
+
+  .form__field--berry {
+    margin-block-end: 56px;
+  }
+
+  .form__field--receipt {
+    margin-block-end: 46px;
+  }
+
+  .form__field--contacts {
+    margin-block-end: 46px;
+  }
+
+  .form__submit {
+    grid-column: 2 / -2;
+  }
+}

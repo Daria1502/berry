@@ -1,0 +1,113 @@
+@media screen and (min-width: 320px) {
+  .promo {
+    padding-block: 68px 192px;
+    background-color: #d4dde6;
+    background-image: url("../img/background/promo-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: left -10px bottom -240px;
+    background-size: 764px auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/promo-mobile@2x.jpg");
+    }
+  }
+
+  .promo__wrapper {
+    @include section-wrapper;
+  }
+
+  .promo__title {
+    color: $green;
+    text-align: center;
+    font-family: "Comfortaa", "Arial", sans-serif;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+    font-weight: 400;
+    margin-block-end: 38px;
+  }
+
+  .promo__advantages {
+    margin-block-end: 54px;
+  }
+
+  .promo__btn {
+    min-height: 56px;
+    letter-spacing: 1.3px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .promo {
+    background-image: url("../img/background/promo-tablet.jpg");
+    padding-block: 143px 420px;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-position: left;
+      background-image: url("../img/background/promo-tablet@2x.jpg");
+    }
+  }
+
+  .promo__wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 20px;
+  }
+
+  .promo__title {
+    grid-column: 3 / -1;
+    text-align: left;
+    font-size: 48px;
+    line-height: calc(54 / 48);
+    margin-block-end: 49px;
+  }
+
+  .promo__title-break {
+    display: none;
+  }
+
+  .promo__advantages {
+    grid-column: 3 / -1;
+    margin-block-end: 30px;
+  }
+
+  .promo__btn {
+    min-height: 68px;
+    width: 336px;
+    grid-column: 3 / -1;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .promo {
+    background-image: url("../img/background/promo-desktop.jpg");
+    padding-block: 172px 252px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/promo-desktop@2x.jpg");
+    }
+  }
+
+  .promo__wrapper {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+  }
+
+  .promo__title {
+    font-size: 52px;
+    line-height: calc(58 / 52);
+    grid-column: 5 / -1;
+    margin-block-end: 57px;
+  }
+
+  .promo__advantages {
+    margin-block-end: 57px;
+    grid-column: 5 / -1;
+  }
+
+  .promo__btn {
+    grid-column: 5 / -1;
+    margin-inline-start: 36px;
+  }
+}

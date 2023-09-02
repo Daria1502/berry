@@ -1,0 +1,30 @@
+@media screen and (min-width: 320px) {
+  .catalog {
+    position: relative;
+    padding-block: 64px 69px;
+  }
+
+  .catalog__title {
+    margin-block-end: 64px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .catalog {
+    padding-block: 101px 142px;
+  }
+
+  .catalog__title {
+    margin-block-end: 71px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .catalog__title {
+    margin-block-end: 91px;
+  }
+
+  .catalog {
+    padding-block-end: 168px;
+  }
+}

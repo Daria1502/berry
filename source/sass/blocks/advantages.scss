@@ -1,0 +1,59 @@
+@media screen and (min-width: 320px) {
+  .advantages {
+    padding-inline: 70px 28px;
+    list-style: none;
+  }
+
+  .advantages__item {
+    position: relative;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    margin-block-end: 19px;
+  }
+
+  .advantages__item::before {
+    margin-block-start: 5px;
+    position: absolute;
+    left: -44px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: url("../img/icons/leaf-point.svg");
+  }
+
+  .advantages__item--snow::before {
+    content: url("../img/icons/snowflake.svg");
+  }
+
+  .advantages__item--car::before {
+    content: url("../img/icons/car.svg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-inline: 44px 28px;
+  }
+
+  .advantages__item {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    margin-block-end: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .advantages {
+    padding-inline: 67px 28px;
+    max-width: 550px;
+  }
+
+  .advantages__item {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    margin-block-end: 24px;
+  }
+
+  .advantages__item:last-of-type {
+    margin-block-end: 0;
+  }
+}

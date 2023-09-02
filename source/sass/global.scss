@@ -1,0 +1,12 @@
+:root {
+  box-sizing: border-box;
+  font-size: calc($root-font-size / $initial-font-size) + em;
+  font-family: "Raleway", "Arial", sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+}

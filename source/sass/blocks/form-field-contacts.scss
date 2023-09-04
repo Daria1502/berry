@@ -24,6 +24,54 @@
     margin-left: 12px;
   }
 
+  .form-field-contacts__name--name::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icons/star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 30px;
+    top: -2px;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  .form-field-contacts__name--phone::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icons/star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 63px;
+    top: -2px;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  .form-field-contacts__name--email::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icons/star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 40px;
+    top: -2px;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  .form-field-contacts__name--address::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icons/star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 47px;
+    top: -2px;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
   .form-field-contacts__input {
     font-family: inherit;
     font-size: 16px;
@@ -53,6 +101,10 @@
 
   .form-field-contacts__input:disabled {
     border: 1px solid $leaf-grey;
+  }
+
+  .form-field-contacts__input:default {
+    border: 1px solid $green;
   }
 
   .form-field-contacts__input--adress {
@@ -138,6 +190,30 @@
   .form-field-contacts__item--email {
     grid-row: 2 / 2;
     grid-column: 2 / 2;
+  }
+
+  .form-field-contacts__name--name::before {
+    content: "";
+    left: 30px;
+    top: -5px;
+  }
+
+  .form-field-contacts__name--phone::before {
+    content: "";
+    left: 63px;
+    top: -6px;
+  }
+
+  .form-field-contacts__name--email::before {
+    content: "";
+    left: 40px;
+    top: -6px;
+  }
+
+  .form-field-contacts__name--address::before {
+    content: "";
+    left: 47px;
+    top: -4px;
   }
 }
 

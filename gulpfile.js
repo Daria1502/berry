@@ -11,8 +11,8 @@ import htmlmin from "gulp-htmlmin";
 import terser from "gulp-terser";
 import svgo from "gulp-svgo";
 import svgstore from "gulp-svgstore";
+import squoosh from "gulp-libsquoosh";
 import del from "del";
-import imagemin from "gulp-imagemin";
 import webp from "gulp-webp";
 import tozip from "gulp-zip";
 
@@ -84,28 +84,26 @@ export const zip = function () {
 // Images
 
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(imagemin([
-      imagemin.mozjpeg({ progressive: true }),
-      imagemin.optipng({ optimizationLevel: 3 }),
-      imagemin.svgo()
-    ]))
-    .pipe(gulp.dest("build/img"))
-}
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'))
+  }
 
-const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg,mp4}")
-    .pipe(gulp.dest("build/img"))
-}
+  const copyImages = () => {
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(gulp.dest('build/img'))
+  }
 
 
 // WebP
 
 const createWebp = () => {
-  return gulp.src(["source/img/**/*.{jpg,png}", "!source/img/icons/favicons/*.png"])
-    .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("build/img"))
-}
+  return gulp.src('source/img/**/*.{png,jpg}')
+  .pipe(squoosh({
+  webp: {}
+  }))
+  .pipe(gulp.dest('build/img'))
+  }
 
 
 // svg optimizer

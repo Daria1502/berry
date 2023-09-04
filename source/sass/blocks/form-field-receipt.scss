@@ -59,7 +59,7 @@
     margin-left: 6px;
   }
 
-  .form-field-receipt__thing-item::before:hover {
+  .form-field-receipt__item-select:hover + .form-field-receipt__name .form-field-receipt__thing-item::before {
     content: "";
     position: absolute;
     background-color: $green-hover;
@@ -76,6 +76,11 @@
   .form-field-receipt__thing-item:focus-visible {
     border: 2px solid $black;
     outline: none;
+  }
+
+  .form-field-receipt__thing-item:disabled {
+    border: 2px solid $leaf-grey;
+    cursor: no-drop;
   }
 }
 

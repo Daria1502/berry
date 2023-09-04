@@ -1,9 +1,9 @@
 @media screen and (min-width: 320px) {
-  .form-field-choise {
+  .form-field-choice {
     border: none;
   }
 
-  .form-field-choise__wrapper {
+  .form-field-choice__wrapper {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -12,17 +12,17 @@
     row-gap: 30px;
   }
 
-  .form-field-choise__name--small {
+  .form-field-choice__name--small {
     font-size: 14px;
   }
 
-  .form-field-choise__title {
+  .form-field-choice__title {
     color: #0f805d;
     font-size: 20px;
     margin-bottom: 20px;
   }
 
-  .form-field-choise__name {
+  .form-field-choice__name {
     display: flex;
     flex-direction: row;
     column-gap: 12px;
@@ -30,7 +30,7 @@
     font-size: 16px;
   }
 
-  .form-field-choise__thing-item {
+  .form-field-choice__thing-item {
     position: relative;
     border: 2px solid $green;
     border-radius: 5px;
@@ -39,29 +39,29 @@
     cursor: pointer;
   }
 
-  .form-field-choise__thing-item:hover {
+  .form-field-choice__thing-item:hover {
     border: 2px solid $green-hover;
   }
 
-  .form-field-choise__thing-item:active {
+  .form-field-choice__thing-item:active {
     border: 2px solid $green-hover;
   }
 
-  .form-field-choise__item-select + .form-field-choise__name .form-field-choise__thing-item:focus-visible {
+  .form-field-choice__item-select + .form-field-choice__name .form-field-choice__thing-item:focus-visible {
     border: 2px solid $black;
     outline: none;
   }
 
-  .form-field-choise__thing-item--disabled {
+  .form-field-choice__thing-item--disabled {
     border: 2px solid $leaf-grey;
     cursor: no-drop;
   }
 
-  .form-field-choise__thing-item--disabled:hover {
+  .form-field-choice__thing-item--disabled:hover {
     border: 2px solid $leaf-grey;
   }
 
-  .form-field-choise__item-select:checked + .form-field-choise__name .form-field-choise__thing-item::before {
+  .form-field-choice__item-select:checked + .form-field-choice__name .form-field-choice__thing-item::before {
     content: "";
     position: absolute;
     background-image: url("/img/icons/check.svg");
@@ -71,50 +71,60 @@
     min-height: 20px;
   }
 
-  .form-field-choise__item--cowberry {
+  .form-field-choice__item-select:checked:hover + .form-field-choice__name .form-field-choice__thing-item::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icons/check-hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  .form-field-choice__item--cowberry {
     order: 1;
   }
 
-  .form-field-choise__item--cherry {
+  .form-field-choice__item--cherry {
     order: 3;
   }
 
-  .form-field-choise__item--bilberry {
+  .form-field-choice__item--bilberry {
     order: 5;
   }
 
-  .form-field-choise__item--blackberry {
+  .form-field-choice__item--blackberry {
     order: 7;
   }
 
-  .form-field-choise__item--strawberry {
+  .form-field-choice__item--strawberry {
     order: 9;
   }
 
-  .form-field-choise__item--cranberry {
+  .form-field-choice__item--cranberry {
     order: 10;
     grid-row: 6 / 6;
   }
 
-  .form-field-choise__item--gooseberry {
+  .form-field-choice__item--gooseberry {
     order: 2;
   }
 
-  .form-field-choise__item--raspberries {
+  .form-field-choice__item--raspberries {
     order: 4;
   }
 
-  .form-field-choise__item--cloudberry {
+  .form-field-choice__item--cloudberry {
     order: 6;
   }
 
-  .form-field-choise__item--blueberry {
+  .form-field-choice__item--blueberry {
     order: 8;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .form-field-choise__wrapper {
+  .form-field-choice__wrapper {
     display: grid;
     align-items: start;
     column-gap: 65px;
@@ -123,65 +133,65 @@
     grid-auto-flow: dense;
   }
 
-  .form-field-choise__title {
+  .form-field-choice__title {
     font-size: 28px;
     margin-bottom: 31px;
   }
 
-  .form-field-choise__name {
+  .form-field-choice__name {
     font-size: 18px;
   }
 
-  .form-field-choise__item--cowberry {
+  .form-field-choice__item--cowberry {
     order: 1;
   }
 
-  .form-field-choise__item--cherry {
+  .form-field-choice__item--cherry {
     order: 4;
   }
 
-  .form-field-choise__item--bilberry {
+  .form-field-choice__item--bilberry {
     order: 7;
   }
 
-  .form-field-choise__item--blackberry {
+  .form-field-choice__item--blackberry {
     order: 9;
     grid-column: 1 / 1;
   }
 
-  .form-field-choise__item--strawberry {
+  .form-field-choice__item--strawberry {
     order: 3;
   }
 
-  .form-field-choise__item--cranberry {
+  .form-field-choice__item--cranberry {
     order: 6;
     grid-row: 2 / 2;
     grid-column: 2 / 2;
   }
 
-  .form-field-choise__item--gooseberry {
+  .form-field-choice__item--gooseberry {
     order: 8;
   }
 
-  .form-field-choise__item--raspberries {
+  .form-field-choice__item--raspberries {
     order: 10;
     grid-column: 2 / 2;
   }
 
-  .form-field-choise__item--cloudberry {
+  .form-field-choice__item--cloudberry {
     order: 3;
   }
 
-  .form-field-choise__item--blueberry {
+  .form-field-choice__item--blueberry {
     order: 6;
   }
 
-  .form-field-choise__first-column {
+  .form-field-choice__first-column {
     display: grid;
     row-gap: 24px;
   }
 
-  .form-field-choise__second-column {
+  .form-field-choice__second-column {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
@@ -189,7 +199,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .form-field-choise__wrapper {
+  .form-field-choice__wrapper {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -198,42 +208,42 @@
     margin-bottom: 5px;
   }
 
-  .form-field-choise__title {
+  .form-field-choice__title {
     margin-bottom: 40px;
   }
 
-  .form-field-choise__name {
+  .form-field-choice__name {
     font-size: 18px;
     width: 118px;
   }
 
-  .form-field-choise__item--bilberry {
+  .form-field-choice__item--bilberry {
     grid-row: 1 / 1;
     grid-column: 2 / 2;
   }
 
-  .form-field-choise__item--strawberry {
+  .form-field-choice__item--strawberry {
     grid-row: 1 / 1;
     grid-column: 3 / 3;
   }
 
-  .form-field-choise__item--blackberry {
+  .form-field-choice__item--blackberry {
     grid-row: 2 / 2;
     grid-column: 2 / 2;
   }
 
-  .form-field-choise__item--cranberry {
+  .form-field-choice__item--cranberry {
     grid-row: 2 / 2;
     grid-column: 3 / 3;
   }
 
-  .form-field-choise__item--gooseberry {
+  .form-field-choice__item--gooseberry {
     grid-row: 1 / 1;
     grid-column: 4 / 4;
     margin-right: 20px;
   }
 
-  .form-field-choise__item--raspberries {
+  .form-field-choice__item--raspberries {
     grid-row: 2 / 2;
     grid-column: 4 / 4;
   }

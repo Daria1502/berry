@@ -70,6 +70,16 @@
     min-width: 20px;
     min-height: 20px;
   }
+
+  .form-field-storage__item-select:checked:hover + .form-field-storage__name .form-field-storage__thing-item::before {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icons/check-hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 20px;
+    min-height: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {

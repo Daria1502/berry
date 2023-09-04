@@ -71,7 +71,9 @@
   height: 6px;
 }
 
-@mixin show-outline($color: #ff0000, $weight: 2px) {
+
+// for block debug start
+@mixin show-outline($color: red, $weight: 2px) {
   outline: $weight dashed $color;
   outline-offset: -$weight;
 }

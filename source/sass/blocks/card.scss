@@ -6,9 +6,7 @@
   }
 
   .card--hide {
-    @include mobile-only {
-      display: none;
-    }
+    display: none;
   }
 
   .card__image {

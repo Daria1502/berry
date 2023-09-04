@@ -1,0 +1,115 @@
+@media screen and (min-width: 320px) {
+  .form-field-receipt {
+    border: none;
+  }
+
+  .form-field-receipt__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    margin-bottom: 20px;
+  }
+
+  .form-field-receipt__title {
+    color: #0f805d;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .form-field-receipt__name {
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+    align-items: center;
+    font-size: 16px;
+    line-height: 18px;
+    padding-right: 40px;
+  }
+
+  .form-field-receipt__item-select {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .form-field-receipt__thing-item {
+    position: relative;
+    border: 2px solid $green;
+    border-radius: 50%;
+    min-width: 24px;
+    min-height: 24px;
+    cursor: pointer;
+  }
+
+  .form-field-receipt__item-select:checked + .form-field-receipt__name .form-field-receipt__thing-item::before {
+    content: "";
+    position: absolute;
+    background-color: $green;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 6px;
+  }
+
+  .form-field-receipt__thing-item::before:hover {
+    content: "";
+    position: absolute;
+    background-color: $green-hover;
+  }
+
+  .form-field-receipt__thing-item:hover {
+    border: 2px solid $green-hover;
+  }
+
+  .form-field-receipt__thing-item:active {
+    border: 2px solid $green-hover;
+  }
+
+  .form-field-receipt__thing-item:focus-visible {
+    border: 2px solid $black;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .form-field-receipt {
+    padding-inline: 44px;
+    margin-bottom: 15px;
+  }
+
+  .form-field-receipt__wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 13px;
+  }
+
+  .form-field-receipt__title {
+    font-size: 28px;
+    margin-bottom: 33px;
+  }
+
+  .form-field-receipt__name {
+    padding-right: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .form-field-receipt__wrapper {
+    display: flex;
+    flex-direction: row;
+    column-gap: 45px;
+  }
+
+  .form-field-receipt__title {
+    margin-bottom: 40px;
+  }
+}

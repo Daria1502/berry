@@ -7,6 +7,20 @@
   .catalog__title {
     margin-block-end: 64px;
   }
+
+  .catalog--branch-one::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 228px;
+    height: 32px;
+    background-image: url("../img/icons/two-branchs.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -17,6 +31,12 @@
   .catalog__title {
     margin-block-end: 71px;
   }
+
+  .catalog--branch-one::after {
+    width: 296px;
+    height: 42px;
+    bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -26,5 +46,11 @@
 
   .catalog {
     padding-block-end: 168px;
+  }
+
+  .catalog--branch-one::after {
+    width: 296px;
+    height: 42px;
+    bottom: 25px;
   }
 }

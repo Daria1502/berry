@@ -41,7 +41,21 @@
 
   .order__set {
     @include section-wrapper;
-    padding-inline: 26px;
+    padding-inline: 15px;
+  }
+
+  .order__desc--branch-form-one::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 228px;
+    height: 32px;
+    background-image: url("../img/icons/two-branchs.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    bottom: 0;
   }
 }
 
@@ -73,6 +87,11 @@
     padding: 0;
     max-width: 792px;
   }
+
+  .order__desc--branch-form-one::after {
+    width: 296px;
+    height: 42px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -92,5 +111,9 @@
 
   .order__set {
     max-width: none;
+  }
+
+  .order__desc--branch-form-one::after {
+    bottom: 2px;
   }
 }

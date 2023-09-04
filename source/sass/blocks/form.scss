@@ -1,11 +1,14 @@
 @media screen and (min-width: 320px) {
   .form {
     position: relative;
-    padding-block: 51px 121px;
+    padding-block: 47px 121px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .form__field {
-    margin-block-end: 32px;
+    margin-block-end: 20px;
   }
 
   .form__field--berry {
@@ -17,7 +20,22 @@
   }
 
   .form__submit {
-    width: calc(100% - 4px);
+    width: calc(100% - 25px);
+    margin-left: 10px;
+  }
+
+  .form__submit--branch-form-two::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 228px;
+    height: 32px;
+    background-image: url("../img/icons/two-branchs.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    bottom: 0;
   }
 }
 
@@ -27,39 +45,28 @@
   }
 
   .form__field {
-    margin-block-end: 49px;
-  }
-
-  .form__field--berry {
-    margin-block-end: 50px;
-  }
-
-  .form__field--receipt {
-    margin-block-end: 43px;
-  }
-
-  .form__field--storage {
-    margin-block-end: 49px;
-  }
-
-  .form__field--contacts {
-    margin-block-end: 39px;
+    margin-block-end: 40px;
+    padding-inline-start: 45px;
   }
 
   .form__submit {
     width: 336px;
     margin-inline: auto;
   }
+
+  .form__submit--branch-form-two::after {
+    width: 296px;
+    height: 42px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .form {
-    padding-block: 60px 143px;
-    padding-inline: 24px 30px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 24px;
-    max-width: 100%;
+    justify-content: center;
+    padding-block: 60px 153px;
+    padding-inline: 0;
+    width: 835px;
+    margin: 0 auto;
   }
 
   .form__field {
@@ -80,5 +87,9 @@
 
   .form__submit {
     grid-column: 2 / -2;
+  }
+
+  .form__submit--branch-form-two::after {
+    top: 1395px;
   }
 }

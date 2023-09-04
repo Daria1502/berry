@@ -4,6 +4,8 @@
     padding-block: 16px;
     min-height: 360px;
     background-color: $blue-grey;
+    list-style: none;
+    padding-left: 0;
   }
 
   .menu--scriptable {
@@ -17,6 +19,7 @@
 
   .menu--show {
     transform: translateY(0);
+    padding-top: 16px;
   }
 
   .menu__item {

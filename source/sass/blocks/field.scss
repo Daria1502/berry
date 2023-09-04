@@ -86,10 +86,8 @@
   }
 
   .field__name--small {
-    @include mobile-only {
-      font-size: 14px;
-      line-height: calc(16 / 14);
-    }
+    font-size: 14px;
+    line-height: calc(16 / 14);
   }
 
   .field__name:hover .field__thing-item,
@@ -130,6 +128,7 @@
     height: 24px;
     border-radius: 5px;
     margin-inline-end: 12px;
+    line-height: 18px;
   }
 
   .field__thing-item::before {

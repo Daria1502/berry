@@ -44,6 +44,20 @@
     line-height: calc(16 / 14);
     justify-self: end;
   }
+
+  .main__news--branch-two::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 228px;
+    height: 32px;
+    background-image: url("../img/icons/two-branchs.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -69,6 +83,7 @@
   .news__text {
     font-size: 16px;
     line-height: calc(20 / 16);
+    margin-left: 3px;
   }
 
   .news__text-break {
@@ -78,6 +93,11 @@
   .news__date {
     font-size: 16px;
     line-height: calc(20 / 16);
+  }
+
+  .main__news--branch-form-one::after {
+    width: 296px;
+    height: 42px;
   }
 }
 
@@ -93,5 +113,11 @@
 
   .news__date {
     margin-block-end: 4px;
+  }
+
+  .main__news--branch-two::after {
+    width: 296px;
+    height: 42px;
+    bottom: 10px;
   }
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ваш магазин ягод</title>
+  <title>Магазин ягод</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font">
   <link rel="preload" href="fonts/Comfortaa-Regular.woff2" as="font">
@@ -21,7 +21,7 @@
     <nav class="header__navigation">
       <div class="header__toggle-wrapper">
         <a class="header__logo" href="./index.html" aria-label="на главную страницу">
-          <svg class="header__logo-pic" viewBox="0 0 123 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="133" height="52" class="header__logo-pic" viewBox="0 0 123 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="header__logo-pic-body"
               d="M39.86 28.4801C39.86 24.3501 36.85 22.8801 36.52 22.7301C36.53 22.6301 36.53 22.5301 36.53 22.4401C36.64 21.7801 36.87 19.9701 36.48 18.2701C36.32 17.5501 35.96 16.9401 35.56 16.4301C33.28 11.5301 27.36 9.99005 20.4 9.99005C13.38 9.99005 7.42 11.5601 5.18 16.5601C4.82 17.0501 4.51 17.6101 4.36 18.2701C4.04 19.6901 4.15 21.1801 4.25 22.0301C4.26 22.2701 4.27 22.5101 4.29 22.7501C3.84 22.9601 1 24.4601 1 28.4801C1 32.8501 3.84 34.0901 3.84 34.0901C3.84 34.0901 3.87 39.2501 7.06 42.0401C10.24 44.8201 13.58 44.84 13.58 44.84C13.58 44.84 15.32 48.51 20.43 48.51C25.54 48.51 27.28 44.84 27.28 44.84C27.28 44.84 30.74 44.3301 33.8 42.0401C36.86 39.7501 36.78 34.0901 36.78 34.0901C36.78 34.0901 39.86 32.8601 39.86 28.4801Z"
               fill="#B22EC8" />
@@ -77,135 +77,137 @@
   </header>
   <main class="order">
     <h1 class="order__title heading heading--form">Закажи ягоды</h1>
-    <p class="order__desc branch-form-one">Мы&nbsp;соберём для вас ягоды и&nbsp;доставим их&nbsp;в&nbsp;удобном для вас
+    <p class="order__desc order__desc--branch-form-one">Мы&nbsp;соберём для вас ягоды и&nbsp;доставим их&nbsp;в&nbsp;удобном для вас
       виде&nbsp;- свежими или замороженными</p>
     <section class="order__set">
       <h2 class="visually-hidden">Выбрать ягоды</h2>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-        <fieldset class="form__field form__field--berry field-group field-group--berry">
-          <legend class="field-group__title">Выберите ягоды</legend>
-          <div class="field-group__wrapper">
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="lingonberry" type="checkbox" name="berry" value="lingonberry">
-              <label class="field__name" for="lingonberry">
-                <span class="field__thing-item field__thing-item--checkbox"></span>брусника</label>
+        <fieldset class="form-field-choise form__field">
+          <legend class="form-field-choise__title">Выберите ягоды</legend>
+          <div class="form-field-choise__wrapper">
+            <div class="form-field-choise__item form-field-choise__item--cowberry">
+              <input class="form-field-choise__item-select visually-hidden" id="lingonberry" type="checkbox" name="berry" value="lingonberry">
+              <label class="form-field-choise__name" for="lingonberry">
+                <span class="form-field-choise__thing-item form-field-choise__thing-item--checkbox"></span>брусника</label>
             </div>
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="cherry" type="checkbox" name="berry" value="cherry">
-              <label class="field__name" for="cherry">
-                <span class="field__thing-item field__thing-item--checkbox"></span>вишня</label>
+            <div class="form-field-choise__item form-field-choise__item--cherry">
+              <input class="form-field-choise__item-select visually-hidden" id="cherry" type="checkbox" name="berry" value="cherry">
+              <label class="form-field-choise__name" for="cherry">
+                <span class="form-field-choise__thing-item form-field-choise__thing-item--checkbox" tabindex="0"></span>вишня</label>
             </div>
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="blueberry" type="checkbox" name="berry" value="blueberry">
-              <label class="field__name field__name--small" for="blueberry">
-                <span class="field__thing-item field__thing-item--checkbox"></span>голубика</label>
+            <div class="form-field-choise__item form-field-choise__item--bilberry">
+              <input class="form-field-choise__item-select visually-hidden" id="bilberry" type="checkbox" name="berry" value="blueberry">
+              <label class="form-field-choise__name" for="bilberry">
+                <span class="form-field-choise__thing-item form-field-choise__thing-item--checkbox" tabindex="0"></span>голубика</label>
             </div>
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="blackberry" type="checkbox" name="berry" value="blackberry">
-              <label class="field__name field__name--small" for="blackberry">
-                <span class="field__thing-item field__thing-item--checkbox"></span>ежевика</label>
+            <div class="form-field-choise__item form-field-choise__item--blackberry">
+              <input class="form-field-choise__item-select visually-hidden" id="blackberry" type="checkbox" name="berry" value="blackberry">
+              <label class="form-field-choise__name" for="blackberry">
+                <span class="form-field-choise__thing-item form-field-choise__thing-item--checkbox" tabindex="0"></span>ежевика</label>
             </div>
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="strawberry" type="checkbox" name="berry" value="strawberry">
-              <label class="field__name" for="strawberry">
-                <span class="field__thing-item field__thing-item--checkbox"></span>клубника</label>
+            <div class="form-field-choise__item form-field-choise__item--strawberry">
+              <input class="form-field-choise__item-select visually-hidden" id="strawberry" type="checkbox" name="berry" value="strawberry">
+              <label class="form-field-choise__name" for="strawberry">
+                <span class="form-field-choise__thing-item form-field-choise__thing-item--checkbox" tabindex="0"></span>клубника</label>
             </div>
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="cranberry" type="checkbox" name="berry" value="cranberry">
-              <label class="field__name" for="cranberry">
-                <span class="field__thing-item field__thing-item--checkbox"></span>клюква</label>
+            <div class="form-field-choise__item form-field-choise__item--cranberry">
+              <input class="form-field-choise__item-select visually-hidden" id="cranberry" type="checkbox" name="berry" value="cranberry">
+              <label class="form-field-choise__name" for="cranberry">
+                <span class="form-field-choise__thing-item form-field-choise__thing-item--checkbox" tabindex="0"></span>клюква</label>
             </div>
-            <div class="field-group__item field">
-              <input class="field__item-select" id="gooseberry" type="checkbox" name="berry" value="gooseberry">
-              <label class="field__name" for="gooseberry">
-                <span class="field__thing-item field__thing-item--checkbox"></span>крыжовник</label>
+            <div class="form-field-choise__item form-field-choise__item--gooseberry">
+              <input class="form-field-choise__item-select visually-hidden" id="gooseberry" type="checkbox" name="berry" value="gooseberry">
+              <label class="form-field-choise__name" for="gooseberry">
+                <span class="form-field-choise__thing-item form-field-choise__thing-item--checkbox" tabindex="0"></span>крыжовник</label>
             </div>
-            <div class="field-group__item field">
-              <input class="field__item-select" id="raspberry" type="checkbox" name="berry" value="raspberry">
-              <label class="field__name" for="raspberry">
-                <span class="field__thing-item field__thing-item--checkbox"></span>малина</label>
+            <div class="form-field-choise__item form-field-choise__item--raspberries">
+              <input class="form-field-choise__item-select visually-hidden" id="raspberry" type="checkbox" name="berry" value="raspberry">
+              <label class="form-field-choise__name" for="raspberry">
+                <span class="form-field-choise__thing-item form-field-choise__thing-item--checkbox" tabindex="0"></span>малина</label>
             </div>
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="cloudberry" type="checkbox" name="berry" value="cloudberry"
+            <div class="form-field-choise__item form-field-choise__item--cloudberry">
+              <input class="form-field-choise__item-select visually-hidden" id="cloudberry" type="checkbox" name="berry" value="cloudberry"
                 disabled>
-              <label class="field__name" for="cloudberry">
-                <span class="field__thing-item field__thing-item--checkbox"></span>морошка</label>
+              <label class="form-field-choise__name" for="cloudberry">
+                <span class="form-field-choise__thing-item form-field-choise__thing-item--disabled"></span>морошка</label>
             </div>
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="hurtleberry" type="checkbox" name="berry" value="hurtleberry"
+            <div class="form-field-choise__item form-field-choise__item--blueberry">
+              <input class="form-field-choise__item-select visually-hidden" id="hurtleberry" type="checkbox" name="berry" value="hurtleberry"
                 disabled>
-              <label class="field__name" for="hurtleberry">
-                <span class="field__thing-item field__thing-item--checkbox"></span>черника</label>
+              <label class="form-field-choise__name" for="hurtleberry">
+                <span class="form-field-choise__thing-item form-field-choise__thing-item--disabled"></span>черника</label>
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="form__field form__field--storage field-group field-group--storage">
-          <legend class="field-group__title field-group__title--storage">Вид хранения</legend>
-          <div class="field-group__wrapper field-group__wrapper--storage">
-            <div class="field-group__item field">
-              <input class="field__item-select" id="fresh" type="checkbox" name="storage" value="fresh">
-              <label class="field__name" for="fresh">
-                <span class="field__thing-item field__thing-item--indent field__thing-item--checkbox"></span>свежие ягоды</label>
+        <fieldset class="form-field-storage">
+          <legend class="form-field-storage__title">Вид хранения</legend>
+          <div class="form-field-storage__wrapper">
+            <div class="form-field-storage__item form-field-storage__item--fresh-berries">
+              <input class="form-field-storage__item-select" id="fresh" type="checkbox" name="storage" value="fresh">
+              <label class="form-field-storage__name" for="fresh">
+                <span class="form-field-storage__thing-item" tabindex="0"></span>свежие ягоды</label>
             </div>
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="frozen" type="checkbox" name="storage" value="frozen">
-              <label class="field__name" for="frozen">
-                <span class="field__thing-item field__thing-item--indent field__thing-item--checkbox"></span>замороженые ягоды</label>
+            <div class="form-field-storage__item form-field-storage__item--frost-berries">
+              <input class="form-field-storage__item-select" id="frozen" type="checkbox" name="storage" value="frozen">
+              <label class="form-field-storage__name" for="frozen">
+                <span class="form-field-storage__thing-item" tabindex="0"></span>замороженые ягоды</label>
             </div>
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="mix" type="checkbox" name="storage" value="mix">
-              <label class="field__name" for="mix">
-                <span class="field__thing-item field__thing-item--checkbox"></span>ягодные миксы</label>
+            <div class="form-field-storage__item form-field-storage__item--berry-mixes">
+              <input class="form-field-storage__item-select" id="mix" type="checkbox" name="storage" value="mix">
+              <label class="form-field-storage__name form-field-storage__name--gap" for="mix">
+                <span class="form-field-storage__thing-item" tabindex="0"></span>ягодные миксы</label>
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="form__field form__field--receipt field-group field-group--receipt">
-          <legend class="field-group__title field-group__title--receipt">Способ доставки</legend>
-          <div class="field-group__wrapper field-group__wrapper--receipt">
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="delivery" type="radio" name="receipt" value="delivery" checked>
-              <label class="field__name field__name--short" for="delivery">
-                <span class="field__thing-item field__thing-item--radio"></span>Доставка<br>(по&nbsp;СПБ в&nbsp;пределах &nbsp;КАД)</label>
+        <fieldset class="form-field-receipt">
+          <legend class="form-field-receipt__title">Способ доставки</legend>
+          <div class="form-field-receipt__wrapper">
+            <div class="form-field-receipt__item">
+              <input class="form-field-receipt__item-select" id="delivery" type="radio" name="receipt" value="delivery" checked>
+              <label class="form-field-receipt__name" for="delivery">
+                <span class="form-field-receipt__thing-item" tabindex="0"></span>Доставка<br>(по&nbsp;СПБ в&nbsp;пределах &nbsp;КАД)</label>
             </div>
-            <div class="field-group__item  field">
-              <input class="field__item-select" id="pickup" type="radio" name="receipt" value="pickup">
-              <label class="field__name field__name--middle" for="pickup">
-                <span class="field__thing-item field__thing-item--radio"></span>Самовывоз<br>(Набережная Обводного канала,
+            <div class="form-field-receipt__item">
+              <input class="form-field-receipt__item-select" id="pickup" type="radio" name="receipt" value="pickup">
+              <label class="form-field-receipt__name" for="pickup">
+                <span class="form-field-receipt__thing-item" tabindex="0"></span>Самовывоз<br>(Набережная Обводного канала,
                 101)</label>
             </div>
           </div>
         </fieldset>
-        <fieldset class="form__field form__field--contacts field-group field-group--contacts">
-          <legend class="field-group__title field-group__title--contacts">Ваши контакты</legend>
-          <div class="field-group__wrapper field-group__wrapper--contacts">
-            <div class="field-group__item field">
-              <label class="field__name field__name--text field__name--required" for="name">Имя</label>
-              <input class="field__item field__item" id="name" type="text" name="name"
+        <fieldset class="form-field-contacts">
+          <legend class="form-field-contacts__title">Ваши контакты</legend>
+          <div class="form-field-contacts__wrapper">
+            <div class="form-field-contacts__item form-field-contacts__item--name">
+              <label class="form-field-contacts__name" for="name">Имя</label>
+              <input class="form-field-contacts__input" id="name" type="text" name="name"
                 placeholder="Как к вам обращаться?" required>
             </div>
-            <div class="field-group__item field">
-              <label class="field__name field__name--text field__name--required" for="phone">Телефон</label>
-              <input class="field__item" id="phone" type="tel" name="phone" placeholder="+7 ххх ххх хх хх" required>
+            <div class="form-field-contacts__item form-field-contacts__item--phone">
+              <label class="form-field-contacts__name" for="phone">Телефон</label>
+              <input class="form-field-contacts__input" id="phone" type="tel" name="phone" placeholder="+7 ххх ххх хх хх" required>
             </div>
-            <div class="field-group__item field">
-              <label class="field__name field__name--text field__name--required" for="mail">Email</label>
-              <input class="field__item" id="mail" type="email" name="mail" placeholder="Ваш email" required>
+            <div class="form-field-contacts__item form-field-contacts__item--email">
+              <label class="form-field-contacts__name" for="mail">Email</label>
+              <input class="form-field-contacts__input" id="mail" type="email" name="mail" placeholder="Ваш email" required>
             </div>
-            <div class="field-group__item field">
-              <label class="field__name field__name--text field__name--required" for="address">Адрес</label>
-              <input class="field__item field__item--address" id="address" type="text" name="address" placeholder="Адрес в Санкт-Петербурге" required>
+          </div>
+          <div class="form-field-contacts__review-wrapper">
+            <div class="form-field-contacts__item">
+              <label class="form-field-contacts__name" for="address">Адрес</label>
+              <input class="form-field-contacts__input form-field-contacts__input--adress" id="address" type="text" name="address" placeholder="Адрес в Санкт-Петербурге" required>
             </div>
-            <div class="field-group__item field">
-              <p class="field__name field__name--message">Пожелания к&nbsp;заказу</p>
-              <textarea class="field__item field__item--message" name="form-message"
+            <div class="form-field-contacts__item">
+              <p class="form-field-contacts__name form-field-contacts__name--comment">Пожелания к&nbsp;заказу</p>
+              <textarea class="form-field-contacts__input form-field-contacts__input--comment" style="resize: none;" name="form-message"
                 placeholder="Чем мы можем вам помочь?"></textarea>
             </div>
           </div>
         </fieldset>
-        <button class="form__submit btn btn--promo branch-form-two" type="submit">Заказать</button>
+        <button class="form__submit btn btn--promo form__submit--branch-form-two" type="submit">Заказать</button>
       </form>
     </section>
     <section class="order__contacts contacts contacts--form">
@@ -231,6 +233,7 @@
         </a>
       </div>
       <div class="contacts__map map">
+        <h2 class="visually-hidden">Наше местоположение</h2>
         <picture>
           <source type="image/webp" media="(min-width: 1440px)"
             srcset="./img/map-desktop.webp 1x, ./img/map-desktop@2x.webp 2x">
@@ -251,7 +254,7 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__item main-footer__item-logo">
         <a href="./index.html" class="main-footer__logo" aria-label="на главную страницу">
-          <svg class="main-footer__logo-pic" viewBox="0 0 123 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg width="133" height="52" class="main-footer__logo-pic" viewBox="0 0 123 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="main-footer__logo-pic-body"
               d="M39.86 28.4801C39.86 24.3501 36.85 22.8801 36.52 22.7301C36.53 22.6301 36.53 22.5301 36.53 22.4401C36.64 21.7801 36.87 19.9701 36.48 18.2701C36.32 17.5501 35.96 16.9401 35.56 16.4301C33.28 11.5301 27.36 9.99005 20.4 9.99005C13.38 9.99005 7.42 11.5601 5.18 16.5601C4.82 17.0501 4.51 17.6101 4.36 18.2701C4.04 19.6901 4.15 21.1801 4.25 22.0301C4.26 22.2701 4.27 22.5101 4.29 22.7501C3.84 22.9601 1 24.4601 1 28.4801C1 32.8501 3.84 34.0901 3.84 34.0901C3.84 34.0901 3.87 39.2501 7.06 42.0401C10.24 44.8201 13.58 44.84 13.58 44.84C13.58 44.84 15.32 48.51 20.43 48.51C25.54 48.51 27.28 44.84 27.28 44.84C27.28 44.84 30.74 44.3301 33.8 42.0401C36.86 39.7501 36.78 34.0901 36.78 34.0901C36.78 34.0901 39.86 32.8601 39.86 28.4801Z"
               fill="#B22EC8" />
@@ -289,6 +292,13 @@
       </div>
       <ul class="main-footer__item main-footer__social social-list social-list--right">
         <li class="social-list__item">
+          <a aria-label="наш канал в телеграмм" class="social-list__item-link" href="#">
+            <svg aria-hidden="true" class="social-list__item-pic" width="32" height="32">
+              <use xlink:href="./img/icons/sprite.svg#tm"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-list__item">
           <a aria-label="мы во Вконтакте" class="social-list__item-link" href="#">
             <svg aria-hidden="true" class="social-list__item-pic" width="32" height="32">
               <use xlink:href="./img/icons/sprite.svg#vk"></use>
@@ -299,13 +309,6 @@
           <a aria-label="мы на Youtube" class="social-list__item-link" href="#">
             <svg class="social-list__item-pic" width="32" height="32">
               <use xlink:href="./img/icons/sprite.svg#yt"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a aria-label="наш канал в телеграмм" class="social-list__item-link" href="#">
-            <svg aria-hidden="true" class="social-list__item-pic" width="32" height="32">
-              <use xlink:href="./img/icons/sprite.svg#tm"></use>
             </svg>
           </a>
         </li>

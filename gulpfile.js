@@ -113,19 +113,19 @@ const createWebp = () => {
 const svg = () => {
   return gulp.src(["source/img/**/*.svg", "!source/img/icons/sprite/*.svg"])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img/'))
+    .pipe(gulp.dest("build/img/"))
 }
 
 
 // Sprite
 
 const sprite = () => {
-  return gulp.src('source/img/icons/sprite/*.svg')
+  return gulp.src("source/img/icons/sprite/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img/icons/'));
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img/icons/"));
 }
 
 
@@ -133,20 +133,20 @@ const sprite = () => {
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{woff2,woff}',
-    'source/*.ico',
-    'source/manifest.webmanifest'
+    "source/fonts/*.{woff2,woff}",
+    "source/*.ico",
+    "source/manifest.webmanifest"
   ], {
-    base: 'source'
+    base: "source"
   })
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest("build"))
   done();
 }
 
 // Clean
 
 export const clean = () => {
-  return del('build');
+  return del("build");
 }
 
 // Server
@@ -154,7 +154,7 @@ export const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,
@@ -173,11 +173,11 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/js/*.js', gulp.series(scripts));
-  gulp.watch('source/*.html', gulp.series(html, reload));
-  gulp.watch('source/img/icons/sprite/*.svg', gulp.series(sprite));
-  gulp.watch(['source/img/**/*.svg','!source/img/icons/sprite/*.svg'], gulp.series(svg));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("source/img/icons/sprite/*.svg", gulp.series(sprite));
+  gulp.watch(["source/img/**/*.svg","!source/img/icons/sprite/*.svg"], gulp.series(svg));
 }
 
 // Build

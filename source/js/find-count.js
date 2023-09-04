@@ -6,7 +6,7 @@ function equating(domElem, colCount, rowCount = "undefined", section = "1fr") {
   if (element !== null) {
     childrens = element.childElementCount;
   } else {
-    console.log(`element not found`)
+    console.log("element not found")
     return undefined;
   }
 
@@ -17,9 +17,9 @@ function equating(domElem, colCount, rowCount = "undefined", section = "1fr") {
   } else {
     rows = Number(rowCount) == Number(rowCount) ? count = rowCount : count;
   }
-  element.style.gridAutoFlow = 'column';
-  element.style.gridTemplateRows = `repeat(${rows}, auto)`;
-  element.style.gridTemplateColumns = `repeat(${colCount}, ${section})`;
+  element.style.gridAutoFlow = "column";
+  element.style.gridTemplateRows = "repeat(${rows}, auto)";
+  element.style.gridTemplateColumns = "repeat(${colCount}, ${section})";
 }
 
 

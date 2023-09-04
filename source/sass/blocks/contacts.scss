@@ -14,8 +14,8 @@
   }
 
   .contacts__title {
-    margin-block-end: 64px;
-    padding-inline-end: 5px;
+    margin-block-end: 66px;
+    padding-inline-end: 13px;
   }
 
   .contacts__info-item {
@@ -53,6 +53,15 @@
     top: 50%;
     transform: translateY(-50%);
     fill: currentColor;
+  }
+
+  .contacts__desc {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-right: 4px;
   }
 }
 
@@ -121,7 +130,6 @@
     padding-block: 100px 81px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    align-items: flex-start;
     column-gap: 20px;
     padding-top: 92px;
   }

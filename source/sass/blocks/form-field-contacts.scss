@@ -43,6 +43,10 @@
     border: 1px solid $green-hover;
   }
 
+  .form-field-contacts__input:focus-visible {
+    outline: 1px solid $green-hover;
+  }
+
   .form-field-contacts__input:invalid {
     border: 1px solid $error;
   }

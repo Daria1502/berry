@@ -56,8 +56,9 @@
     border: 2px solid $green-hover;
   }
 
-  .form-field-storage__thing-item:focus-visible {
+  .form-field-storage__item-select + .form-field-storage__name .form-field-storage__thing-item:focus-visible {
     border: 2px solid $black;
+    outline: none;
   }
 
   .form-field-storage__item-select:checked + .form-field-storage__name .form-field-storage__thing-item::before {

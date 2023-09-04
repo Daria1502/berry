@@ -16,36 +16,6 @@
     font-size: 14px;
   }
 
-  .form-field-choise__item--cowberry {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-  }
-
-  .form-field-choise__item--cherry {
-    grid-row: 2 / 2;
-    grid-column: 1 / 2;
-  }
-
-  .form-field-choise__item--bilberry {
-    grid-row: 3 / 3;
-    grid-column: 1 / 2;
-  }
-
-  .form-field-choise__item--blackberry {
-    grid-row: 4 / 4;
-    grid-column: 1 / 2;
-  }
-
-  .form-field-choise__item--strawberry {
-    grid-row: 5 / 5;
-    grid-column: 1 / 2;
-  }
-
-  .form-field-choise__item--cranberry {
-    grid-row: 6 / 6;
-    grid-column: 1 / 2;
-  }
-
   .form-field-choise__title {
     color: #0f805d;
     font-size: 20px;
@@ -56,7 +26,7 @@
     display: flex;
     flex-direction: row;
     column-gap: 12px;
-    align-items: center;
+    align-items: flex-start;
     font-size: 16px;
   }
 
@@ -77,8 +47,9 @@
     border: 2px solid $green-hover;
   }
 
-  .form-field-choise__thing-item:focus-visible {
+  .form-field-choise__item-select + .form-field-choise__name .form-field-choise__thing-item:focus-visible {
     border: 2px solid $black;
+    outline: none;
   }
 
   .form-field-choise__thing-item--disabled {
@@ -99,6 +70,47 @@
     min-width: 20px;
     min-height: 20px;
   }
+
+  .form-field-choise__item--cowberry {
+    order: 1;
+  }
+
+  .form-field-choise__item--cherry {
+    order: 3;
+  }
+
+  .form-field-choise__item--bilberry {
+    order: 5;
+  }
+
+  .form-field-choise__item--blackberry {
+    order: 7;
+  }
+
+  .form-field-choise__item--strawberry {
+    order: 9;
+  }
+
+  .form-field-choise__item--cranberry {
+    order: 10;
+    grid-row: 6 / 6;
+  }
+
+  .form-field-choise__item--gooseberry {
+    order: 2;
+  }
+
+  .form-field-choise__item--raspberries {
+    order: 4;
+  }
+
+  .form-field-choise__item--cloudberry {
+    order: 6;
+  }
+
+  .form-field-choise__item--blueberry {
+    order: 8;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -108,6 +120,7 @@
     column-gap: 65px;
     row-gap: 24px;
     grid-template-columns: repeat(3, 120px);
+    grid-auto-flow: dense;
   }
 
   .form-field-choise__title {
@@ -115,33 +128,52 @@
     margin-bottom: 31px;
   }
 
+  .form-field-choise__name {
+    font-size: 18px;
+  }
+
   .form-field-choise__item--cowberry {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
+    order: 1;
+  }
+
+  .form-field-choise__item--cherry {
+    order: 4;
+  }
+
+  .form-field-choise__item--bilberry {
+    order: 7;
+  }
+
+  .form-field-choise__item--blackberry {
+    order: 9;
+    grid-column: 1 / 1;
   }
 
   .form-field-choise__item--strawberry {
-    grid-row: 1 / 2;
-    grid-column: 2 / 2;
+    order: 3;
   }
 
   .form-field-choise__item--cranberry {
-    grid-row: 2 / 3;
+    order: 6;
+    grid-row: 2 / 2;
     grid-column: 2 / 2;
   }
 
   .form-field-choise__item--gooseberry {
-    grid-row: 3 / 3;
-    grid-column: 2 / 2;
+    order: 8;
   }
 
   .form-field-choise__item--raspberries {
-    grid-row: 4 / 4;
+    order: 10;
     grid-column: 2 / 2;
   }
 
-  .form-field-choise__name {
-    font-size: 18px;
+  .form-field-choise__item--cloudberry {
+    order: 3;
+  }
+
+  .form-field-choise__item--blueberry {
+    order: 6;
   }
 
   .form-field-choise__first-column {

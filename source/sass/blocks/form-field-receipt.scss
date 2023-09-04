@@ -75,6 +75,7 @@
 
   .form-field-receipt__thing-item:focus-visible {
     border: 2px solid $black;
+    outline: none;
   }
 }
 
